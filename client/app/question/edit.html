@@ -1,0 +1,42 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <form class="form" role="form">
+    <label>创建题目</label>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <select name="question.type" id="question.type" class="form-control"></select>
+    </div>
+    <div class="form-group">
+      <label for="question.description">Description</label>
+      <textarea ng-model="question.description" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="question.images">Images</label>
+      <input type="text" ng-model="question.images" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="question.choices">Choices</label>
+      <input type="text" ng-model="question.choices" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="question.answers">Answers</label>
+      <input type="text" ng-model="question.answers" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="question.coef">Coeficient</label>
+      <input type="text" ng-model="question.coef" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="question.tags">Tags</label>
+      <input type="text" ng-model="question.tags" class="form-control">
+    </div>
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addQuestion()">创建题目</button>
+      </span>
+    </div>
+  </form>
+</div>
+
+<div ng-include="'components/footer.html'"></div>

@@ -5,6 +5,15 @@ angular.module('cepingApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    }, {
+      'title': 'Questions',
+      'link': '/questions'
+    }, {
+      'title': 'Papers',
+      'link': '/papers'
+    }, {
+      'title': 'Tests',
+      'link': '/tests'
     }];
 
     $scope.isCollapsed = true;
